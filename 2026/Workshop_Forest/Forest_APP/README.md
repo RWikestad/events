@@ -13,7 +13,7 @@ The supporting database package consists of:
 
 Follow the steps below to install and configure the application.
 
-## 1. Prerequisites
+### 1. Prerequisites
 
 Before installing the APEX application, ensure that:
 
@@ -24,7 +24,7 @@ Before installing the APEX application, ensure that:
 - The required Select AI credentials and AI profile have been configured, if used by the application.
 - The application export and supporting database package files are available.
 
-## 2. Create an APEX Workspace
+### 2. Create an APEX Workspace
 
 If an APEX workspace has not already been created, create one for the database user.
 
@@ -37,16 +37,16 @@ If an APEX workspace has not already been created, create one for the database u
 
 **Note:** The workspace name and database schema name can be different. In this example, both are named `USERNAME` for simplicity.
 
-## 3. Install the Database Package NAI_APEX_AI
+### 3. Install the Database Package NAI_APEX_AI
 
 The APEX application requires the database package `NAI_APEX_AI`. Install the package before importing the application.
 
-### Step 1: Log in to APEX
+#### Step 1: Log in to APEX
 
 1. Log in to the APEX workspace `USERNAME`.
 2. Open **SQL Workshop → SQL Scripts**.
 
-### Step 2: Install the Package Specification
+#### Step 2: Install the Package Specification
 
 1. Click **Upload**.
 2. Select the file `nai_apex_ai.sql`.
@@ -56,7 +56,7 @@ The APEX application requires the database package `NAI_APEX_AI`. Install the pa
 6. Click **Run** to execute the script.
 7. Review the execution results and verify that the script completed successfully.
 
-### Step 3: Install the Package Body
+#### Step 3: Install the Package Body
 
 1. Return to **SQL Workshop → SQL Scripts**.
 2. Click **Upload**.
@@ -69,7 +69,7 @@ The APEX application requires the database package `NAI_APEX_AI`. Install the pa
 
 **Important:** Install `nai_apex_ai.sql` before `nai_apex_ai.plb`, as the package specification must exist before the package body can be compiled.
 
-### Step 4: Verify Package Installation
+#### Step 4: Verify Package Installation
 
 Open **SQL Workshop → SQL Commands** and execute:
 
@@ -91,11 +91,11 @@ Both objects should have the status `VALID`.
 
 If either object is invalid, review the script execution results and compilation errors before proceeding.
 
-## 4. Import the APEX Application
+### 4. Import the APEX Application
 
 Once the database package has been installed successfully, import the APEX application.
 
-### Step 1: Import the Application File
+#### Step 1: Import the Application File
 
 1. Log in to the APEX workspace `USERNAME`.
 2. Open **App Builder**.
@@ -103,7 +103,7 @@ Once the database package has been installed successfully, import the APEX appli
 4. Select the application export file `f104_ApexForest.sql`.
 5. Follow the import wizard to upload the application.
 
-### Step 2: Configure the Application
+#### Step 2: Configure the Application
 
 During the installation process:
 
@@ -114,7 +114,7 @@ During the installation process:
 
 **Note:** The parsing schema determines which database schema the application uses when executing SQL and PL/SQL.
 
-## 5. Verify the Installation
+### 5. Verify the Installation
 
 After importing the application:
 
