@@ -3,9 +3,12 @@ The folder contains assets created for workshop Forest event in November 2026.
 
 ## Workshop Forest November 2026
 
-[Workshop Forest - Notebook](Notebook/)
+- [Workshop Forest - Notebook](Notebook/)
 
-[Workshop Forest - APEX application](Forest_APP/)
+- [Testing Forest AI Agents via MCP and cURL](2026/Workshop_Forest/MCP/)
+
+- [Workshop Forest - APEX application](Forest_APP/)
+
 
 
 ## Create a Database User
